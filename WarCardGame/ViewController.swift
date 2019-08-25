@@ -51,5 +51,15 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBAction func resetButton(_ sender: Any) {
+        
+        leftImageView.image = UIImage(named: "back")
+        rightImageView.image = UIImage(named: "back")
+        
+        leftScore = 0
+        rightScore = 0
+        leftScoreLabel.text = String(leftScore)
+        rightScoreLabel.text = String(rightScore)
+    }
 }
     
